@@ -31,7 +31,7 @@ Si vous souhaitez lancer les services sans Docker :
 ### 1. Backend (FastAPI)
 
 ```bash
-cd backend
+cd exo_tech/backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 
@@ -42,7 +42,7 @@ uvicorn main:app --reload
 ### 2. Frontend (Streamlit)
 
 ```bash
-cd frontend
+cd exo_tech/frontend
 pip install -r requirements.txt
 streamlit run app.py
 
