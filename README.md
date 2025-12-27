@@ -13,7 +13,7 @@ Un outil automatisé pour l'extraction les données {nom, prenom, email, telepho
 ```bash
 # Cloner le projet
 git clone https://github.com/ClaudelMbz/exo_tech.git
-cd cv-extractor
+cd exo-tech
 
 # Créer l'environnement virtuel
 python -m venv .venv
