@@ -55,7 +55,7 @@ streamlit run app.py
 C'est la méthode recommandée pour garantir que tout fonctionne parfaitement.
 
 ```bash
-cd docker
+cd exo_tech/docker
 docker-compose up --build
 ```
 
