@@ -32,6 +32,7 @@ Si vous souhaitez lancer les services sans Docker :
 
 ```bash
 cd exo_tech/backend
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 uvicorn main:app --reload
 
