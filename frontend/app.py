@@ -1,6 +1,9 @@
 import streamlit as st
 import requests
 import json
+import os
+
+backend_url = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 
 def main():
     st.set_page_config(page_title="CV Extractor")
@@ -28,7 +31,7 @@ def main():
                     files = {"file": (pdf_docx_file.name, pdf_docx_file.getvalue(), pdf_docx_file.type)}
 
                     # Envoi de la requête
-                    response = requests.post(f"http://127.0.0.1:8000/api/v1/upload-cv", files=files)
+                    response = requests.post(f"{backend_url}/api/v1/upload-cv", files=files)
                     if response.status_code == 200:
                         st.success("Succes de l'analyse !")
                         st.session_state['data_cv'] = response.json().get("donnees")                        
