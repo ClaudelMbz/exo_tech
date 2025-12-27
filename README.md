@@ -12,12 +12,13 @@ Un outil automatisé pour l'extraction les données {nom, prenom, email, telepho
 ### Configuration initiale
 ```bash
 # Cloner le projet
-git clone <url-de-ton-repo>
+git clone https://github.com/ClaudelMbz/exo_tech.git
 cd cv-extractor
 
 # Créer l'environnement virtuel
 python -m venv .venv
-source .venv/bin/activate  # Sur Windows: .venv\Scripts\activate
+source .venv/bin/activate
+.venv\Scripts\Activate.ps1  # Sur Windows
 
 ```
 
